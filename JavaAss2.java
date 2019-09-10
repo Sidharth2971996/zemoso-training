@@ -31,3 +31,4 @@ public class JavaAss2{
     }
 
 }
+//The time complexity of the following code is O(26*n) which is equivalent to O(n). n is thee length of the input string.
