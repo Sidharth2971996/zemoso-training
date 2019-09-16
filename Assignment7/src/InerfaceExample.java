@@ -11,6 +11,7 @@ interface TriCycle{
     void speed(int s);
     void color(String c);
 }
+//class Atlas implements multiple interfaces
 class AtlasCycle implements UniCycle,BiCycle,TriCycle{
 
     @Override
@@ -37,7 +38,9 @@ class AtlasCycle implements UniCycle,BiCycle,TriCycle{
 }
 public class InerfaceExample {
     public static void main(String[] args) {
+	//AtlasCycle object created 
         AtlasCycle c1=new AtlasCycle();
+	//any version of speed method can be called because finally its overridden in the AtlasCycle class
         c1.speed(15);
         c1.color("Red");
         c1.Balance();
