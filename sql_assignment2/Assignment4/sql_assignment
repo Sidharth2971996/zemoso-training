@@ -1,0 +1,13 @@
+	select category.name
+	from category
+	inner join film_category on category.category_id=film_category.category_id
+	inner join film on film.film_id=film_category.film_id
+	inner join inventory on film.film_id=inventory.film_id
+	inner join store on inventory.store_id=store.store_id
+	inner join customer on customer.store_id=store.store_id
+	where customer.first_name="PATRICIA" and customer.last_name="JOHNSON"
+	LIMIT 3;
+
+	
+	
+
